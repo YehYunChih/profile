@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.C. Profile</title>
+  <link rel="shortcut icon" href="images/leaf YC.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/game.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/lightslider.min.css">
+  <link rel="stylesheet" href="styles/prettyPhoto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- scroll-btn -->
+  <div class="scroll-btn"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+  <!-- header-section -->
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <div class="container">
+      <div class="logo"></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home" class="active">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#habit">habit</a></li>
+          <li><a href="#game">game</a></li>
+          <li><a href="#gallery">gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- home-section -->
+  <section id="home">
+    <div class="hero-bg" style="background-image: url('images/camille-villanueva-_uevcmjRBT0-unsplash.jpg')">
+      <div class="hero-content">
+        <h1>Welcome</h1>
+        <p>my website</p>
+      </div>
+    </div>
+  </section>
+  
+  <button class="direction-btn dark-text"><a class="dark-text" href="#about"><i class="fas fa-angle-double-down"></i></a></button>
+
+  <!-- about-section -->
+  <section class="about" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="image col-lg-5" data-aos="fade-right"
+      ><img src="images/桃園陽明高中3.jpg" alt=""
+      ></div>
+      <div class="content col-lg-7" data-aos="fade-left">
+        <h2 class="heading">關於<span>About</span></h2>
+        <p>I'm conscientious and  work hard, and I've accumulated experiences and abilities in e-commerce operation and management.<br>
+        I also have learned frontend web development  knowledge to gain skills by myself.</p>
+        
+        <p>I earned Academic Excellence Award twice even though I was busy with part-time job and the activities of orientation camp during my college.</p> 
+          
+        <p>Compared to others, I'm willing to spend more time to enhance skills.I hope to have the pleasure of your granting me an interview.</p>
+        <button class="btn"><a class="dark-text" href="#work">learn more</a></button>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- work-section -->
+  <section id="work">
+    <div >
+      <h2 class="heading"  data-aos="fade-right">作品展示<span>before & after</span></h2>
+    <p  data-aos="fade-right">左鍵按著並左右拖曳以調控比例</p>
+    </div>
+    <div class="slider-container container"  data-aos="fade-left"
+    ><div class="img before"></div
+    ><div class="img after"></div
+    ><input type="range" name="slider" id="slider" class="slider" min="1" max="100" value="50"
+    ><div class='slider-button'></div
+    ></div>
+  </section>
+
+  <!-- light slideshow -->
+  <section>
+    <div class="container">
+      <ul id="lightSlider">
+        <li>
+            <img src="images/full_picture_02.jpg" alt="" class="slide-img">
+        </li>
+        <li>
+          <img src="images/full_picture_03.jpg" alt="" class="slide-img">
+        </li>
+        <li>
+          <img src="images/桃園陽明高中4.jpg" alt="" class="slide-img">
+        </li>
+
+        <li>
+          <img src="images/宮原眼科.jpg" alt="" class="slide-img">
+        </li>
+        <li>
+          <img src="images/台中火車站.jpg" alt="" class="slide-img">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- -habit-section -->
+  <section class="habit" id="habit">
+    <h2 class="heading"   data-aos="fade-right">興趣<span>habit</span></h2>
+    <div class="container">
+      <ul class="row">
+        <li class=" col-md-4"  data-aos="fade-down">
+          <i class="fas fa-book-open"></i>
+          <h2>read</h2>
+        </li>
+        <li class=" col-md-4"   data-aos="fade-down">
+          <i class="fas fa-film"></i>
+          <h2>watch movies</h2>
+        </li>
+        <li class=" col-md-4"  data-aos="fade-down">
+          <i class="fas fa-headphones"></i>
+          <h2>enjoy the music</h2>
+        </li">
+      </ul>
+    </div>
+  </section>
+  <!-- game-section -->
+  <section id="game">
+    <div class="container">
+      <h2 class="heading">記憶<span>flowers</span></h2>
+      <p class="text-center">點選不同位置之2方格進行遊戲配對</p>
+      <div class="game">
+        <h2 class="heading">Score: <span id="score">0</span></h2>
+        <p id="msg">Message for You</p>
+        <button id="restart" class="btn">Restart</button>
+        <div class="game-grid"></div>
+      </div>
+    </div>
+  </section>
+  <!-- gallery-section -->
+  <section class="gallery text-center" id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="heading">作品<span>Gallery</span></h2>
+          <ul class="controls">
+            <li class="filter active" data-filter="all">All</li>
+            <li class="filter" data-filter="horizontal">Horizontal</li>
+            <li class="filter" data-filter="vertical">Vertical</li>
+            <li class="filter" data-filter="ps-works">PS works</li>
+            <li class="filter" data-filter="picture">Pictures</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+      <ul id="Grid" class="row">
+        <li class="mix col-sm-6 col-md-3 vertical ps-works">
+          <a href="images/full_picture_04.jpg" data-rel="prettyPhoto">
+          <img src="images/small_picture_04.jpg" alt="Double Exposure Effect"><span>Double Exposure Effect</span></a>
+        </li>
+        <li class="mix col-sm-6 col-md-3 vertical picture">
+          <a href="images/台中.jpg" data-rel="prettyPhoto">
+          <img src="images/台中.jpg" alt="clock"><span>clock</span></a>
+        </li>
+        <li class="mix col-sm-6 col-md-3 vertical picture">
+          <a href="images/台中宮原眼科.jpg" data-rel="prettyPhoto">
+          <img src="images/台中宮原眼科.jpg" alt="reflection"><span>reflection</span></a>
+        </li>
+       <li class="mix col-sm-6 col-md-3 vertical picture">
+          <a href="images/full_picture_07.jpg" data-rel="prettyPhoto">
+          <img src="images/small_picture_07.jpg" alt="purple line"><span>purple line</span></a>
+        </li>
+        <li class="mix col-md-4 horizontal ps-works">
+          <a href="images/home.jpg" data-rel="prettyPhoto">
+          <img src="images/home.jpg" alt="HOME"><span>HOME</span></a>
+        </li>
+        <li class="mix col-md-4 horizontal ps-works">
+          <a href="images/full_picture_01.jpg" data-rel="prettyPhoto">
+          <img src="images/small_picture_01.jpg" alt="Christopher Nolan"><span>Christopher Nolan</span></a>
+        </li>
+        <li class="mix col-md-4 horizontal ps-works">
+          <a href="images/full_picture_12.jpg" data-rel="prettyPhoto">
+          <img src="images/small_picture_12.jpg" alt="Dragon"><span>Dragon</span></a>
+        </li>
+        <li class="mix col-sm-6 col-md-3 vertical picture">
+          <a href="images/桃園陽明高中.jpg" data-rel="prettyPhoto">
+          <img src="images/桃園陽明高中.jpg" alt="afternoon"><span>afternoon</span></a>
+        </li>
+        <li class="mix col-sm-6 col-md-3 vertical picture">
+          <a href="images/full_picture_06.jpg" data-rel="prettyPhoto">
+          <img src="images/small_picture_06.jpg" alt="Qingjing Farm"><span>Qingjing Farm</span></a>
+        </li>
+ 
+        <li class="mix col-sm-6 col-md-3 vertical picture">
+          <a href="images/台中2.jpg" data-rel="prettyPhoto">
+          <img src="images/台中2.jpg" alt="red house"><span>red house</span></a>
+        </li>
+        <li class="mix col-sm-6 col-md-3 vertical picture">
+          <a href="images/台中宮原眼科2.jpg" data-rel="prettyPhoto">
+          <img src="images/台中宮原眼科2.jpg" alt="Miyahara"><span>Miyahara</span></a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </section>
+  <!-- footer-section -->
+  <footer class="footer">
+    <h4>&copy; Yeh YunChih 2021 all rights reserved.</h4>
+    <p class="img-source">其他圖片來源 : <a target="_blank" href="https://unsplash.com/t/wallpapers">Unsplash</a></p>
+  </footer>
+<script src="scripts/game.js"></script>
+<script src="scripts/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="scripts/jquery.prettyPhoto.js"></script>
+<script src="scripts/jquery.mixitup.min.js"></script>
+<script src="scripts/lightslider.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

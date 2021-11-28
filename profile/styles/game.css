@@ -1,0 +1,30 @@
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 410px;
+  height: 410px;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+}
+.game-grid img {
+  display: inline-block;
+}
+#restart {
+  margin: 0 0 20px;
+  border: none;
+  background-color: #f9e07b;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#restart:active {
+  transform: scale(0.95);
+}
