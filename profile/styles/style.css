@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
 :root {
-  //--btn-color: #c1d890;
   --btn-color: #3f7c01;
   --btn-hover: #499002;
   --navbar-color: #cadfb4;
@@ -530,7 +529,7 @@ header #menu-bar {
     top: 2rem;
     left: 0;
     width: 100%;
-    background: var(--btn-color);
+    background: var(--navbar-color);
     transform: scaleY(0);
     transform-origin: top;
     opacity: 0;
