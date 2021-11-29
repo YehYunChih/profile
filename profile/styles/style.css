@@ -386,6 +386,10 @@ header #menu-bar {
 
 /*---before-after-slider---*/
 
+.photo_show {
+  margin-top: 5rem;
+}
+
 .footer {
   text-align: center;
   color: var(--active-text);
